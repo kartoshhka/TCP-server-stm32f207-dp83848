@@ -108,6 +108,16 @@ static void tcp_server_connection_close(struct tcp_pcb *tpcb, struct server_stru
 //----------------------------------------------------------
 static void tcp_server_error(void *arg, err_t err)
 {
+	struct server_struct *es;
+
+  LWIP_UNUSED_ARG(err);
+
+  es = (struct server_struct *)arg;
+  if (es != NULL)
+  {
+    /*  free es structure */
+    mem_free(es);
+  }
 }
 //-----------------------------------------------
 static err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err)
@@ -143,10 +153,21 @@ static err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, er
 	}
 	else if(es->state == ES_ACCEPTED)
 	{
+		if (strncmp(p->payload, "\r\n", 2) == 0)
+		{
+				pbuf_free(p);
+				ret_err = ERR_OK;
+		}
+		else
+		{
 		  tcp_recved(tpcb, p->tot_len);
+			// don't need string below if str1 would be local
+			strncpy(str1,"\0",strlen(str1)); 
 		  strncpy(str1,p->payload,p->len);
 		  str1[p->len] = '\0';
+			pbuf_free(p);
 		  ret_err = ERR_OK;
+		}
 	}
 	else if (es->state == ES_RECEIVED)
 	{
@@ -244,6 +265,9 @@ static err_t tcp_server_poll(void *arg, struct tcp_pcb *tpcb)
 	{
 	  if (es->p != NULL)
 	  {
+			tcp_sent(tpcb, tcp_server_sent);
+      /* there is a remaining pbuf (chain) , try to send data */
+      tcp_server_send(tpcb, es);
 	  }
 	  else
 	  {
