@@ -373,7 +373,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F207xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;    ../Middlewares/Third_Party/LwIP/src/include;    ../Middlewares/Third_Party/LwIP/system;    ../Drivers/STM32F2xx_HAL_Driver/Inc;    ../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy;    ../Middlewares/Third_Party/LwIP/src/include/netif/ppp;    ../Drivers/CMSIS/Device/ST/STM32F2xx/Include;    ../Middlewares/Third_Party/LwIP/src/include/lwip;    ../Middlewares/Third_Party/LwIP/src/include/lwip/apps;    ../Middlewares/Third_Party/LwIP/src/include/lwip/priv;    ../Middlewares/Third_Party/LwIP/src/include/lwip/prot;    ../Middlewares/Third_Party/LwIP/src/include/netif;    ../Middlewares/Third_Party/LwIP/src/include/posix;    ../Middlewares/Third_Party/LwIP/src/include/posix/sys;    ../Middlewares/Third_Party/LwIP/system/arch;    ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;     ../Middlewares/Third_Party/LwIP/src/include;     ../Middlewares/Third_Party/LwIP/system;     ../Drivers/STM32F2xx_HAL_Driver/Inc;     ../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy;     ../Middlewares/Third_Party/LwIP/src/include/netif/ppp;     ../Drivers/CMSIS/Device/ST/STM32F2xx/Include;     ../Middlewares/Third_Party/LwIP/src/include/lwip;     ../Middlewares/Third_Party/LwIP/src/include/lwip/apps;     ../Middlewares/Third_Party/LwIP/src/include/lwip/priv;     ../Middlewares/Third_Party/LwIP/src/include/lwip/prot;     ../Middlewares/Third_Party/LwIP/src/include/netif;     ../Middlewares/Third_Party/LwIP/src/include/posix;     ../Middlewares/Third_Party/LwIP/src/include/posix/sys;     ../Middlewares/Third_Party/LwIP/system/arch;     ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -432,14 +432,14 @@
               <FilePath>..\Src\net.c</FilePath>
             </File>
             <File>
-              <FileName>gpio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Src/gpio.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/gpio.c</FilePath>
             </File>
             <File>
               <FileName>lwip.c</FileName>
@@ -465,6 +465,11 @@
               <FileName>stm32f2xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/stm32f2xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_ethernet.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\app_ethernet.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -72,3 +72,4 @@ dp83848-tcp\netif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ether
 dp83848-tcp\netif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h
 dp83848-tcp\netif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h
 dp83848-tcp\netif.o: ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h
+dp83848-tcp\netif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h

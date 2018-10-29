@@ -68,6 +68,8 @@ dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/etharp.
 dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ethernet.h
 dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h
 dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h
+dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h
+dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h
 dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/autoip.h
 dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/igmp.h
 dp83848-tcp\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dns.h

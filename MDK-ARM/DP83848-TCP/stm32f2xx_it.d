@@ -61,5 +61,10 @@ dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/pro
 dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h
 dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h
 dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h
+dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h
+dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h
+dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h
+dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h
+dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h
 dp83848-tcp\stm32f2xx_it.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h
 dp83848-tcp\stm32f2xx_it.o: ../Inc/ethernetif.h

@@ -46,6 +46,7 @@ uint16_t ETH_status;
 
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim2;
+
 /******************************************************************************/
 /*            Cortex-M3 Processor Interruption and Exception Handlers         */ 
 /******************************************************************************/
@@ -222,7 +223,7 @@ void EXTI0_IRQHandler(void)
 	}
 
   /* USER CODE END EXTI0_IRQn 0 */
-  //HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
   /* USER CODE BEGIN EXTI0_IRQn 1 */
 
   /* USER CODE END EXTI0_IRQn 1 */

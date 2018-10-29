@@ -62,11 +62,13 @@ dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etherne
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h
-dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h
-dp83848-tcp\net.o: ../Inc/ethernetif.h
-dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h
+dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h
+dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h
+dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h
+dp83848-tcp\net.o: ../Inc/ethernetif.h
+dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/icmp.h
 dp83848-tcp\net.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/icmp.h

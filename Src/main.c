@@ -55,6 +55,7 @@
 
 /* USER CODE BEGIN Includes */
 #include "net.h"
+#include "app_ethernet.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -110,6 +111,7 @@ int main(void)
   MX_LWIP_Init();
   /* USER CODE BEGIN 2 */
 	tcp_server_init();
+	User_notification(&gnetif);
 	//sendstring(str);
   /* USER CODE END 2 */
 
@@ -119,6 +121,7 @@ int main(void)
   {
 		ethernetif_input(&gnetif);
 		sys_check_timeouts();
+		DHCP_Periodic_Handle(&gnetif);
 		//ETH_status = netif_is_up(&gnetif);
   /* USER CODE END WHILE */
 
