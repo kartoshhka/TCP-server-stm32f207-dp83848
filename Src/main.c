@@ -56,12 +56,21 @@
 /* USER CODE BEGIN Includes */
 #include "net.h"
 #include "app_ethernet.h"
+#include "lwip/apps/httpd.h"
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
+extern struct netif gnetif;
+
+const char * MSGS_CGI_Handler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]);
+const tCGI MSGS_CGI={"/msg.cgi", MSGS_CGI_Handler};
+tCGI CGI_TAB[1];
+uint16_t http_var1;
+
 //uint32_t ETH_status;
 /* USER CODE END PV */
 
@@ -74,7 +83,51 @@ void SystemClock_Config(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-extern struct netif gnetif;
+
+uint16_t SSI_Handler(int iIndex, char *pcInsert, int iInsertLen)
+{
+	static uint32_t n = 0;
+	switch(iIndex)
+	{
+		case 0:
+		{
+			n++;
+			sprintf(pcInsert,"%u", n);
+			return strlen(pcInsert);
+		}
+		case 1:
+		{
+			sprintf(pcInsert,"%u",n+5);
+			return strlen(pcInsert);
+		}
+		case 2:
+		{
+			sprintf(pcInsert,"%u",n+10);
+			return strlen(pcInsert);
+		}
+		case 3:
+		{
+			sprintf(pcInsert,"%u",n+15);
+			return strlen(pcInsert);
+		}		
+	}
+  return 0;
+}
+
+const char * MSGS_CGI_Handler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[])
+{
+  if (iIndex==0)
+  {
+		for (uint32_t i=0; i < iNumParams; i++)
+    {
+			  if (strcmp(pcParam[i] , "Var1")==0)
+        {
+					http_var1 = atoi(pcValue[i]); 
+				}
+		}
+	}
+	return "/send.html";
+}
 
 void Button_Init(void)
 {
@@ -99,6 +152,9 @@ void Button_Init(void)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	char const* TAGCHAR[] = {"p","r","s","t"};
+	char const** TAGS=TAGCHAR;
+	
 	char str[30] = {"Hello from mk! \r\n"};
 	uint8_t data_sent =  1;
 	uint8_t sending_accepted = 0;
@@ -127,6 +183,18 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	Button_Init();
 	tcp_server_init();
+	httpd_init();
+	//SSI
+	http_set_ssi_handler(SSI_Handler, (char const **)TAGS, 4);
+	//CGI
+	CGI_TAB[0] = MSGS_CGI;
+	http_set_cgi_handlers(CGI_TAB, 1);
+	
+	#if LWIP_NETIF_HOSTNAME
+		netif_set_hostname(&gnetif, "STM32F207ZGT6"); 
+	#endif /* LWIP_NETIF_HOSTNAME */
+	
+	//net status
 	User_notification(&gnetif);
 	//sendstring(str);
   /* USER CODE END 2 */

@@ -73,7 +73,7 @@ uint8_t User_notification(struct netif *netif)
 		else
 			return 0;
 	}
- else
+	else
   {  
     DHCP_state = DHCP_LINK_DOWN;
 		return 0;
@@ -124,8 +124,8 @@ void DHCP_Process(struct netif *netif)
       dhcp_start(netif);
     }
     break;
-    
-  case DHCP_WAIT_ADDRESS:
+
+		case DHCP_WAIT_ADDRESS:
     {
       if (dhcp_supplied_address(netif)) 
       {
@@ -152,14 +152,14 @@ void DHCP_Process(struct netif *netif)
       }
     }
     break;
-  case DHCP_LINK_DOWN:
+		case DHCP_LINK_DOWN:
     {
       /* Stop DHCP */
       dhcp_stop(netif);
       DHCP_state = DHCP_OFF; 
     }
     break;
-  default: break;
+		default: break;
   }
 }
 

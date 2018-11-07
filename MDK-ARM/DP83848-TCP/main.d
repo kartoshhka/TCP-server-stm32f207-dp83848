@@ -75,3 +75,5 @@ dp83848-tcp\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h
 dp83848-tcp\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/icmp.h
 dp83848-tcp\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/icmp.h
 dp83848-tcp\main.o: ../Inc/app_ethernet.h
+dp83848-tcp\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd.h
+dp83848-tcp\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h

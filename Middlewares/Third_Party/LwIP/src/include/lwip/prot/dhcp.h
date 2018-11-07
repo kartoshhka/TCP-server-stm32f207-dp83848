@@ -147,6 +147,7 @@ typedef enum {
 #define DHCP_OPTION_TCP_TTL         37
 #define DHCP_OPTION_NTP             42
 #define DHCP_OPTION_END             255
+#define DHCP_OPTION_CLIENT_FQDN			81
 
 /* DHCP options */
 #define DHCP_OPTION_REQUESTED_IP    50 /* RFC 2132 9.1, requested IP address */

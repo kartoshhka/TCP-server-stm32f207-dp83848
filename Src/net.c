@@ -1,8 +1,9 @@
 #include "net.h"
+
 //-----------------------------------------------
 //uint8_t ipaddr_dest[4];
 //uint16_t port_dest;
-char str1[100];
+char input_str[100];
 //u8_t data[100];
 struct tcp_pcb *server_pcb;
 
@@ -161,10 +162,10 @@ static err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, er
 		else
 		{
 		  tcp_recved(tpcb, p->tot_len);
-			// don't need string below if str1 would be local
-			strncpy(str1,"\0",strlen(str1)); 
-		  strncpy(str1,p->payload,p->len);
-		  str1[p->len] = '\0';
+			// don't need string below if input_str would be local
+			strncpy(input_str,"\0",strlen(input_str)); 
+		  strncpy(input_str,p->payload,p->len);
+		  input_str[p->len] = '\0';
 			pbuf_free(p);
 		  ret_err = ERR_OK;
 		}

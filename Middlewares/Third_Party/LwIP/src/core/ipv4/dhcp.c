@@ -1427,6 +1427,21 @@ dhcp_option_hostname(struct dhcp *dhcp, struct netif *netif)
       while (len--) {
         dhcp_option_byte(dhcp, *p++);
       }
+			//!!!!!!!!ADDED!!!!!!!!!!! set hostname
+			//p = (const char*)netif->hostname;
+			if (p != NULL)
+			{
+				dhcp_option(dhcp, DHCP_OPTION_CLIENT_FQDN, strlen(p)+3);
+				dhcp_option_byte(dhcp, 1);  // 1 or 5
+				dhcp_option_byte(dhcp, 0);
+				dhcp_option_byte(dhcp, 0);
+				
+				while (*p)
+				{
+					dhcp_option_byte(dhcp, *p++);
+				}
+			}
+			//////!!!!!!!!!!/////////
     }
   }
 }
