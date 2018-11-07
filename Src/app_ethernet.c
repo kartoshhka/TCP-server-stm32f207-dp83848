@@ -61,16 +61,22 @@ __IO uint8_t DHCP_state = DHCP_OFF;
   * @param  netif: the network interface
   * @retval None
   */
-void User_notification(struct netif *netif) 
+uint8_t User_notification(struct netif *netif) 
 {
   if (netif_is_up(netif))
- {
+	{
     /* Update DHCP state machine */
-    DHCP_state = DHCP_START;
- }
+		if (DHCP_state == DHCP_OFF || DHCP_state == DHCP_LINK_DOWN)
+			DHCP_state = DHCP_START;
+		if (DHCP_state == DHCP_ADDRESS_ASSIGNED || DHCP_state == DHCP_TIMEOUT)
+			return 1;
+		else
+			return 0;
+	}
  else
   {  
     DHCP_state = DHCP_LINK_DOWN;
+		return 0;
   } 
 }
 

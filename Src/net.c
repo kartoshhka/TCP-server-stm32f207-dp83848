@@ -1,9 +1,9 @@
 #include "net.h"
 //-----------------------------------------------
-uint8_t ipaddr_dest[4];
-uint16_t port_dest;
+//uint8_t ipaddr_dest[4];
+//uint16_t port_dest;
 char str1[100];
-u8_t data[100];
+//u8_t data[100];
 struct tcp_pcb *server_pcb;
 
 __IO uint32_t message_count=0;

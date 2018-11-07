@@ -76,6 +76,19 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 extern struct netif gnetif;
 
+void Button_Init(void)
+{
+	GPIO_InitTypeDef GPIO_InitStruct;
+	__HAL_RCC_GPIOG_CLK_ENABLE();
+	__HAL_RCC_GPIOB_CLK_ENABLE();
+	
+	GPIO_InitStruct.Pin = GPIO_PIN_8;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+	
+	HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+}
 /* USER CODE END 0 */
 
 /**
@@ -86,7 +99,9 @@ extern struct netif gnetif;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	char str[30] = {'H','e','l','l','o',' ','f','r','o','m',' ','m','k','!'};;
+	char str[30] = {"Hello from mk! \r\n"};
+	uint8_t data_sent =  1;
+	uint8_t sending_accepted = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -110,6 +125,7 @@ int main(void)
   MX_TIM2_Init();
   MX_LWIP_Init();
   /* USER CODE BEGIN 2 */
+	Button_Init();
 	tcp_server_init();
 	User_notification(&gnetif);
 	//sendstring(str);
@@ -122,6 +138,21 @@ int main(void)
 		ethernetif_input(&gnetif);
 		sys_check_timeouts();
 		DHCP_Periodic_Handle(&gnetif);
+		
+		//checking link state for accepting sending data
+		if (User_notification(&gnetif))
+			sending_accepted = 1;
+		else
+			sending_accepted = 0;
+		//send data if button is pressed
+		if (HAL_GPIO_ReadPin(GPIOG, GPIO_PIN_8) == GPIO_PIN_RESET && data_sent == 0 && sending_accepted)
+		{
+			data_sent = 1;
+			sendstring(str);
+		}
+		else if (HAL_GPIO_ReadPin(GPIOG, GPIO_PIN_8) == GPIO_PIN_SET && data_sent)
+			data_sent = 0;
+			
 		//ETH_status = netif_is_up(&gnetif);
   /* USER CODE END WHILE */
 

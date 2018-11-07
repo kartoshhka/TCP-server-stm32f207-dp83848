@@ -82,7 +82,7 @@
 #define GW_ADDR3   (uint8_t) 1
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
-void User_notification(struct netif *netif);
+uint8_t User_notification(struct netif *netif);
 void DHCP_Process(struct netif *netif);
 void DHCP_Periodic_Handle(struct netif *netif);  
 
