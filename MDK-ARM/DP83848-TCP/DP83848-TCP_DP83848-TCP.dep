@@ -128,7 +128,7 @@ I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h)(0x59B90EB2)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h)(0x59B90EB2)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h)(0x59B90EB2)
 I (../Inc/app_ethernet.h)(0x5BD97087)
-F (../Src/main.c)(0x5BE2FE28)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\main.o --omf_browse dp83848-tcp\main.crf --depend dp83848-tcp\main.d)
+F (../Src/main.c)(0x5BE428AB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\main.o --omf_browse dp83848-tcp\main.crf --depend dp83848-tcp\main.d)
 I (../Inc/main.h)(0x5BE29D9F)
 I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal.h)(0x59B942FC)
 I (../Inc/stm32f2xx_hal_conf.h)(0x5BE29D9F)
@@ -201,6 +201,7 @@ I (../Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h)(0x59B90EB3)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/icmp.h)(0x59B90EB2)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/icmp.h)(0x59B90EB2)
 I (../Inc/app_ethernet.h)(0x5BD97087)
+I (../Inc/app_http.h)(0x5BE4242B)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd.h)(0x59B90EB2)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h)(0x59B90EB2)
 F (../Src/gpio.c)(0x5BE29D9B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\gpio.o --omf_browse dp83848-tcp\gpio.crf --depend dp83848-tcp\gpio.d)
@@ -300,7 +301,7 @@ I (../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h)(0x59B90EB3)
 I (../Inc/ethernetif.h)(0x5BE29D9E)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/init.h)(0x59B90EB2)
 I (../Middlewares/Third_Party/LwIP/src/include/lwip/sio.h)(0x59B90EB2)
-F (../Src/ethernetif.c)(0x5BE29D9E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\ethernetif.o --omf_browse dp83848-tcp\ethernetif.crf --depend dp83848-tcp\ethernetif.d)
+F (../Src/ethernetif.c)(0x5BE40CF8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\ethernetif.o --omf_browse dp83848-tcp\ethernetif.crf --depend dp83848-tcp\ethernetif.d)
 I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal.h)(0x59B942FC)
 I (../Inc/stm32f2xx_hal_conf.h)(0x5BE29D9F)
 I (../Inc/main.h)(0x5BE29D9F)
@@ -485,6 +486,75 @@ I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_pwr.h)(0x59B9458A)
 I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_pwr_ex.h)(0x59B942FD)
 I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_tim.h)(0x59B94634)
 I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_tim_ex.h)(0x59B942FD)
+F (..\Src\app_http.c)(0x5BE4409B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\app_http.o --omf_browse dp83848-tcp\app_http.crf --depend dp83848-tcp\app_http.d)
+I (../Inc/app_http.h)(0x5BE4242B)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/apps/httpd_opts.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h)(0x59B90EB2)
+I (../Inc/lwipopts.h)(0x5BE2FC77)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal.h)(0x59B942FC)
+I (../Inc/stm32f2xx_hal_conf.h)(0x5BE29D9F)
+I (../Inc/main.h)(0x5BE29D9F)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_rcc.h)(0x59B94689)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_def.h)(0x59C94D3B)
+I (../Drivers/CMSIS/Device/ST/STM32F2xx/Include/stm32f2xx.h)(0x59BF9CB6)
+I (../Drivers/CMSIS/Device/ST/STM32F2xx/Include/stm32f207xx.h)(0x59BF9B2F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x59B90E9F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF3C42)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x59B90E9F)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x59B90E9F)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x59B90E9F)
+I (../Drivers/CMSIS/Device/ST/STM32F2xx/Include/system_stm32f2xx.h)(0x59BF9B2F)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x59CE2167)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AF3C42)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_rcc_ex.h)(0x59B942FD)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_gpio.h)(0x59B94484)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_gpio_ex.h)(0x59B942FD)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_dma.h)(0x59CA550B)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_dma_ex.h)(0x59B942FD)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_cortex.h)(0x59B942FC)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_eth.h)(0x59B94BEB)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_flash.h)(0x59B94609)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_flash_ex.h)(0x59B942FD)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_pwr.h)(0x59B9458A)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_pwr_ex.h)(0x59B942FD)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_tim.h)(0x59B94634)
+I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal_tim_ex.h)(0x59B942FD)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/system/arch/cc.h)(0x59B90EB3)
+I (../Middlewares/Third_Party/LwIP/system/arch/cpu.h)(0x59B90EB3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55AF3C42)
+I (C:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x55AF3C42)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/err.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/pbuf.h)(0x59B90EB2)
+I (../Inc/lwip.h)(0x5BE29D9D)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/mem.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/memp.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_std.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_priv.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/stats.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/netif/etharp.h)(0x59B90EB3)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/etharp.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip4_addr.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/def.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/netif.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip6_addr.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip4.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip4.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ethernet.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h)(0x59B90EB3)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h)(0x59B90EB3)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h)(0x59B90EB2)
+I (../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h)(0x59B90EB3)
+I (../Inc/ethernetif.h)(0x5BE29D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AF3C42)
 F (../Drivers/STM32F2xx_HAL_Driver/Src/stm32f2xx_hal_eth.c)(0x59B9430A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I../Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Drivers/STM32F2xx_HAL_Driver/Inc -I../Drivers/STM32F2xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F2xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/src/apps/httpd-I C:\Users\Mariya\Desktop\tests\ETH\DP83848-TCP\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F2xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F2xx\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F207xx -DUSE_HAL_DRIVER -DSTM32F207xx-o dp83848-tcp\stm32f2xx_hal_eth.o --omf_browse dp83848-tcp\stm32f2xx_hal_eth.crf --depend dp83848-tcp\stm32f2xx_hal_eth.d)
 I (../Drivers/STM32F2xx_HAL_Driver/Inc/stm32f2xx_hal.h)(0x59B942FC)
 I (../Inc/stm32f2xx_hal_conf.h)(0x5BE29D9F)

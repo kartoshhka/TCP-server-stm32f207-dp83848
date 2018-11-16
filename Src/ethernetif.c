@@ -578,7 +578,7 @@ err_t ethernetif_init(struct netif *netif)
   
 #if LWIP_NETIF_HOSTNAME
   /* Initialize interface hostname */
-  netif->hostname = "lwip";
+  netif->hostname = "STM32F207ZGT6";
 #endif /* LWIP_NETIF_HOSTNAME */
 
   netif->name[0] = IFNAME0;
